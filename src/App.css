@@ -1,38 +1,213 @@
-.App {
+@import 'antd/dist/antd.css';
+
+h1{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+p{
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.site-layout-content {
+  min-height: 280px;
+  padding: 2rem 0 1rem 2.5rem;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
+  row-gap: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site-layout-content2{
+  min-height: 280px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-radius: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container-detailLeft {
+  margin: 1.5rem 3rem 1.5rem 1rem;
+}
+
+.container-detailLeft img{
+  border-radius: 2rem;
+}
+.container-detailRigth {
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-left: 9rem;
+}
+
+.container-detailRigth h1{
+  line-height: 1rem;
+}
+
+.container-detailRigth h3{
+  line-height: 2rem;
+}
+
+.container-btn{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 5rem 3rem;
+  gap: 4rem;
+}
+
+button{
+  width: 15rem;
+  height: 3rem;
+  background-color: rgb(14, 180, 14);
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px  rgb(163, 156, 156);
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+button:hover{
+  background-color: grey;
+  color: black;
+}
+
+.container-form{
+  width: 30vw;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.container-form .btn-search{
+  background-color: rgb(40, 40, 189);
+  box-shadow: rgba(201, 185, 185, 0.3);
+  width: 5vw;
+  font-size: 1rem;
+}
+.container-form .btn-search:hover{
+  background-color: rgb(112, 104, 104);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container-form .btn-reset{
+  background-color: rgb(212, 16, 16);
+  box-shadow: rgba(201, 185, 185, 0.3);
+  width: 5vw;
+  font-size: 1rem;
+}
+.container-form .btn-reset:hover{
+  background-color: rgb(112, 104, 104);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-form .search{
+  width: 20vw;
+  height: 3rem;
+}
+
+.category1{
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(190, 183, 183);
+  color: black;
+  font-size: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.category{
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(190, 183, 183);
+  color: black;
+  font-size: 1rem;
+  border-radius: 0;
+  border-right: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+}
+
+.category0{
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(190, 183, 183);
+  color: black;
+  font-size: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.container-top{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.containerTopright{
+  margin-top: 6rem;
+}
+
+.containerTopleft{
+  margin-top: 5rem;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+
+.container-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar{
+  color: white;
+}
+
+.btn-nav{
+  width: 6rem;
+  height: 4rem;
+  border-radius: 0;
+  background-color: rgb(4, 4, 34);
+}
+
+.btn-nav:hover{
+  background-color: rgb(0, 0, 255);
+  color: white;
+}
+
+.judul{
+  text-align: center;
+}
+
+.ingredient{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: left;
+}
+
+.ingredient p{
+  line-height: 1.5rem;
+}
+
+.instruction{
+  text-align: center;
 }
